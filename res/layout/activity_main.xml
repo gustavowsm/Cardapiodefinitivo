@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ea7a66"
+        android:gravity="center"
+        android:text="@string/cardapio"
+        android:textSize="40sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:padding="16dp">
+
+
+            <ImageView
+                android:id="@+id/bife_foto"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/bife" />
+
+            <TextView
+                android:id="@+id/bife_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/bife_foto"
+                android:text="@string/bife"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/bife_preco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bife_textView"
+                android:layout_toEndOf="@id/bife_foto"
+                android:text="@string/precobife" />
+
+            <Button
+                android:id="@+id/bife_button_rm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/bife_button"
+
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toLeftOf="@id/bife_button"
+                android:background="@drawable/dlt"
+                android:gravity="end"
+                android:onClick="remove_lista"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/bife_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/check"
+                android:gravity="center"
+                android:onClick="add_lista"
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/frango_foto"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/frango" />
+
+            <TextView
+                android:id="@+id/frango_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/frango_foto"
+                android:text="@string/frango"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/frango_preco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frango_textView"
+                android:layout_toEndOf="@id/frango_foto"
+                android:text="@string/precofrango" />
+
+            <Button
+                android:id="@+id/frango_button_rm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/frango_button"
+                android:layout_marginLeft="0dp"
+
+
+                android:layout_toLeftOf="@id/frango_button"
+                android:background="@drawable/dlt"
+                android:gravity="end"
+                android:onClick="remove_lista"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/frango_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/check"
+                android:gravity="center"
+                android:onClick="add_lista"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/churras_foto"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/churras" />
+
+            <TextView
+                android:id="@+id/churras_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/churras_foto"
+                android:text="@string/churras"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/churras_preco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/churras_textView"
+                android:layout_toEndOf="@id/churras_foto"
+                android:text="@string/precochurras" />
+
+            <Button
+                android:id="@+id/churras_button_rm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/churras_button"
+
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="0dp"
+                android:layout_toLeftOf="@id/churras_button"
+                android:background="@drawable/dlt"
+                android:gravity="end"
+                android:onClick="remove_lista"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/churras_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/check"
+                android:gravity="center"
+                android:onClick="add_lista"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/lasanha_foto"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/lasanha" />
+
+            <TextView
+                android:id="@+id/lasanha_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/lasanha_foto"
+                android:text="@string/lasanha"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/lasanha_preco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lasanha_textView"
+                android:layout_toEndOf="@id/lasanha_foto"
+                android:text="@string/precolasanha" />
+
+            <Button
+                android:id="@+id/lasanha_button_rm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/lasanha_button"
+                android:layout_marginLeft="0dp"
+
+
+                android:layout_toLeftOf="@id/lasanha_button"
+                android:background="@drawable/dlt"
+                android:gravity="end"
+                android:onClick="remove_lista"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/lasanha_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/check"
+                android:gravity="center"
+                android:onClick="add_lista"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/refri_foto"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/refri" />
+
+            <TextView
+                android:id="@+id/refri_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/refri_foto"
+                android:text="@string/refri"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/refri_preco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/refri_textView"
+                android:layout_toEndOf="@id/refri_foto"
+                android:text="@string/precorefri" />
+
+            <Button
+                android:id="@+id/refri_button_rm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/refri_button"
+                android:layout_marginLeft="0dp"
+
+
+                android:layout_toLeftOf="@id/refri_button"
+                android:background="@drawable/dlt"
+                android:gravity="end"
+                android:onClick="remove_lista"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/refri_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/check"
+                android:gravity="center"
+                android:onClick="add_lista"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/cerveja_foto"
+                android:layout_width="60dp"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/cerveja" />
+
+            <TextView
+                android:id="@+id/cerveja_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/cerveja_foto"
+                android:text="@string/cerveja"
+                android:textSize="15sp" />
+
+            <TextView
+
+                android:id="@+id/cerveja_preco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cerveja_textView"
+                android:layout_toEndOf="@id/cerveja_foto"
+                android:text="@string/precocerveja" />
+
+            <Button
+                android:id="@+id/cerveja_button_rm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/cerveja_button"
+                android:layout_marginLeft="0dp"
+
+
+                android:layout_toLeftOf="@id/cerveja_button"
+                android:background="@drawable/dlt"
+                android:gravity="end"
+                android:onClick="remove_lista"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/cerveja_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/check"
+                android:gravity="center"
+                android:onClick="add_lista"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/pedido_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:layout_gravity="end"
+            android:layout_marginBottom="20dp"
+            android:background="#ea7a66"
+            android:onClick="fazer_pedido"
+            android:text="Fazer pedido"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+    </GridLayout>
+
+</LinearLayout>

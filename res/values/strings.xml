@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cardapiodefinitivo</string>
+    <string name="cardapio">Cardápio</string>
+    <string name="bife">Arroz, feijao, salada e bife acebolado</string>
+    <string name="frango">Arroz, feijao, salada e frango</string>
+    <string name="churras"> Arroz, feijao, vinagrete e churrasco</string>
+    <string name="lasanha">Lasanha a bolonhesa</string>
+    <string name="refri">Refrigerante  </string>
+    <string name="cerveja">Cerveja</string>
+    <string name="precobife">12.00</string>
+    <string name="precofrango">12.00</string>
+    <string name="precolasanha">19.00</string>
+    <string name="precochurras">20.00</string>
+    <string name="precorefri">7.00</string>
+    <string name="precocerveja">7.00</string>
+    <string name="lista_de_pedido">Lista de Pedido</string>
+</resources>
