@@ -399,7 +399,7 @@
         </RelativeLayout>
 
         <Button
-            android:id="@+id/pedido_button"
+            android:id="@+id/button_pedido"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_row="7"
@@ -408,7 +408,7 @@
             android:layout_marginBottom="20dp"
             android:background="#ea7a66"
             android:onClick="fazer_pedido"
-            android:text="Fazer pedido"
+            android:text="@string/fazer_pedido"
             android:textColor="#fff"
             android:textSize="20sp" />
 

@@ -67,14 +67,14 @@ public class MainActivity extends AppCompatActivity {
     public void fazer_pedido(View view){
 
         valortotal();
-        Intent i = new Intent( MainActivity.this, detalhePedido.class);
+        Intent i = new Intent(MainActivity.this, detalhePedido.class);
         Bundle bundle = new Bundle();
         bundle.putString("Itens escolhidos", escolhas);
         bundle.putString("Preço do pedido", precos);
         i.putExtras(bundle);
         startActivity(i);
         escolhas="";
-    }
+   }
 
     // adiciona na lista
     public void add_lista(View view){
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 bife.setText(Integer.toString(bp));
                 Toast.makeText(this, "Bife removido", Toast.LENGTH_SHORT).show();
             }
-            Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
 
         } else if (view == findViewById(R.id.frango_button_rm)) {
             if (fp > 0) {
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                 frango.setText(Integer.toString(fp));
                 Toast.makeText(this, "Frango removido", Toast.LENGTH_SHORT).show();
             }
-            Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
 
         } else if (view == findViewById(R.id.churras_button_rm)) {
             if (cp > 0) {
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 churras.setText(Integer.toString(cp));
                 Toast.makeText(this, "Churrasco removido", Toast.LENGTH_SHORT).show();
             }
-            Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
 
         } else if (view == findViewById(R.id.lasanha_button_rm)) {
             if (lp > 0) {
@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
                 lasanha.setText(Integer.toString(lp));
                 Toast.makeText(this, "Lasanha removida", Toast.LENGTH_SHORT).show();
             }
-            Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
 
 
         } else if (view == findViewById(R.id.refri_button_rm)) {
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
                 refri.setText(Integer.toString(rp));
                 Toast.makeText(this, "Refrigerante removido", Toast.LENGTH_SHORT).show();
             }
-            Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
 
         } else if (view == findViewById(R.id.cerveja_button_rm)) {
             if (cep > 0) {
@@ -162,8 +162,8 @@ public class MainActivity extends AppCompatActivity {
                 cerveja.setText(Integer.toString(cep));
                 Toast.makeText(this, "Cerveja removida", Toast.LENGTH_SHORT).show();
             }
-
-        }Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
+        }
+//        Toast.makeText(this, "Adicione algo primeiro", Toast.LENGTH_SHORT).show();
 
 
     }
